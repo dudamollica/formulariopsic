@@ -1,0 +1,203 @@
+body {
+    font-family: allerta;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    justify-content: center;
+}
+.termo{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.termo img{
+    margin-top:30px;
+    width:217px;
+    height: 51px;
+}
+.termo strong{
+    font-size: 18px;
+    text-decoration: underline;
+}
+.termo span{
+     color:#FFF;
+}
+.termo h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    color: black;
+    text-shadow:
+        -1px -1px 0px #fff,
+        -1px 1px 0px #000,
+        1px -1px 0px #fff,
+        1px 0px 0px #000; 
+}
+.termo button{
+    background-color: salmon;
+    border-color: salmon;
+    border-radius:5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.termo div, .resultado p{
+    padding-left:30px;
+    padding-right:30px;
+    margin-top:20px;
+    line-height: 30px;
+}
+
+.container-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-inicial h1, .resultado h1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 15px;
+    color: dodgerblue;
+    text-shadow:
+        -1px -1px 0px #FFF,
+        -1px 1px 0px #FFF,
+        1px -1px 0px #FFF,
+        1px 0px 0px #FFF;
+}
+
+.instrucoes {
+    font-size: 25px;
+    margin-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.instrucoes li {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.start {
+    width: 100px;
+    height: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    background-color: blue;
+    border-color: blue;
+    border-radius: 7px;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.start:hover {
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.question {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.question span{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.sem-click{
+    padding-left: 5px;
+    width: 220px;
+    height: 25px;
+    font-family: allerta;
+    margin-bottom: 15px;
+    background-color:rgb(120, 182, 245);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.question div:hover{
+    cursor: pointer;
+    background-color:rgb(170, 212, 253);
+}
+.clicada{
+    padding-left: 5px;
+    width: 220px;
+    height: 25px;
+    font-family: allerta;
+    margin-bottom: 15px;
+    background-color:rgb(170, 212, 253);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center
+}
+.enviar{
+    width: 100px;
+    height: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    background-color: blue;
+    border-color: blue;
+    border-radius: 7px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.enviar:hover{
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    cursor: pointer;
+}
+.loading{
+    width: 40px;
+    height: 40px;
+    animation: spin 1s infinite linear;
+}
+.resultado p{
+font-size: 25px;
+text-align: center;
+margin-bottom: 30px;
+}
+
+.escondido {
+    display: none;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 614px){
+    .question {
+    width: 100%;
+}
+.termo{
+    width: 600px;
+}
+.termo div{
+    width: 450px;
+}
+.resultado p{
+    width: 600px;
+}
+}

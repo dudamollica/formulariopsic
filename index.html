@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allerta&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <title>Avaliação</title>
+</head>
+
+<body>
+    <div class="termo">
+    <img src="img/logo-uam.jpg"/>
+     <h1>QUAL SEU NÍVEL DE ESTRESSE?</h1>
+     <div><span>......</span>Agora que vocês já sabem o que é o Estresse e suas manifestações, 
+         nós estagiários de Psicologia da Universidade Anhembi Morumbi,
+         preparamos um Teste Validado com apenas 14 questões objetivas. 
+         O presente estudo visa investigar, por meio do Questionário,
+         a Avaliação Psicológica do nível de estresse.
+         Caso sua pontuação for superior a 42 pontos, será informado algum nível de estresse.</br>
+        <strong>Obs.:Você não será identificado.</strong> </br>
+        Obs.:As pontuações serão salvas para a coleta da média de estresse.</br>
+        Obs.: Ao clicar, vai para uma página contendo as instruções.</br>
+        Concorda em realizar?</br>
+       <button class="concordo" onclick="concordoContinuar()">Concordo e desejo continuar</button>
+    </div>
+    </div>
+    <div class="container-inicial escondido">
+        <h1>Ferramenta para Avaliação</br> de Nível de Stress</h1>
+        <ul class="instrucoes">
+            <li> 🔹 Todas as suas informações são sigilosas!!!</li>
+            <li> 🔹 Por favor, leia e responda as questões de forma sincera e objetiva.</li>
+            <li> 🔹Ao final, terá o resultado.</li>
+        </ul>
+        <button class="start" onclick="iniciarTeste()">Start</button>
+    </div>
+
+
+    <form class="escondido" action="https://api.sheetmonkey.io/form/vKpLAs3MmrSneW3g3GVVq3", method="post">
+        <div class="question pergunta1">
+            <span>
+                1. No mês passado, quantas vezes você ficou chateado(a) por causa de algo que aconteceu inesperadamente?
+            </span>
+            <div class="sem-click" onclick="pergunta1(this)" id="0">Nunca</div>
+            <div class="sem-click" onclick="pergunta1(this)" id="1">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta1(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta1(this)" id="3">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta1(this)" id="4">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta2 escondido">
+            <span>
+                2.	No mês passado, quantas vezes você se sentiu incapaz de controlar as coisas importantes na sua vida?
+            </span>
+            <div class="sem-click" onclick="pergunta2(this)" id="0">Nunca</div>
+            <div class="sem-click" onclick="pergunta2(this)" id="1">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta2(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta2(this)" id="3">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta2(this)" id="4">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta3 escondido">
+            <span>
+                3.	No mês passado, quantas vezes você se sentiu nervoso(a) ou estressado(a)?
+            </span>
+            <div class="sem-click" onclick="pergunta3(this)" id="0">Nunca</div>
+            <div class="sem-click" onclick="pergunta3(this)" id="1">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta3(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta3(this)" id="3">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta3(this)" id="4">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta4 escondido">
+            <span>
+                4.	No mês passado, quantas vezes você lidou com sucesso com os problemas e aborrecimentos do dia a dia?
+            </span>
+            <div class="sem-click" onclick="pergunta4(this)" id="4">Nunca</div>
+            <div class="sem-click" onclick="pergunta4(this)" id="3">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta4(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta4(this)" id="1">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta4(this)" id="0">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta5 escondido">
+            <span>
+                5.	No mês passado, quantas vezes você sentiu que estava lidando de forma eficaz com as mudanças </br> importantes que estavam acontecendo na em sua vida?
+            </span>
+            <div class="sem-click" onclick="pergunta5(this)" id="4">Nunca</div>
+            <div class="sem-click" onclick="pergunta5(this)" id="3">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta5(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta5(this)" id="1">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta5(this)" id="0">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta6 escondido">
+            <span>
+                6.	No mês passado, quantas vezes você se sentiu confiante nas suas capacidades para lidar com os seus problemas pessoais?
+            </span>
+            <div class="sem-click" onclick="pergunta6(this)" id="4">Nunca</div>
+            <div class="sem-click" onclick="pergunta6(this)" id="3">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta6(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta6(this)" id="1">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta6(this)" id="0">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta7 escondido">
+            <span>
+                7.	No mês passado, quantas vezes você sentiu que as coisas estavam ocorrendo a sua maneira (do seu jeito)?
+            </span>
+            <div class="sem-click" onclick="pergunta7(this)" id="4">Nunca</div>
+            <div class="sem-click" onclick="pergunta7(this)" id="3">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta7(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta7(this)" id="1">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta7(this)" id="0">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta8 escondido">
+            <span>
+                8.	No mês passado, quantas vezes você percebeu que não poderia lidar com todas as coisas que você tinha para fazer?
+            </span>
+            <div class="sem-click" onclick="pergunta8(this)" id="0">Nunca</div>
+            <div class="sem-click" onclick="pergunta8(this)" id="1">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta8(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta8(this)" id="3">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta8(this)" id="4">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta9 escondido">
+            <span>
+                9.	No mês passado, quantas vezes você foi capaz de controlar as irritações da sua vida?
+            </span>
+            <div class="sem-click" onclick="pergunta9(this)" id="4">Nunca</div>
+            <div class="sem-click" onclick="pergunta9(this)" id="3">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta9(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta9(this)" id="1">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta9(this)" id="0">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta10 escondido">
+            <span>
+                10.	No mês passado, quantas vezes você sentiu que estava no topo das coisas (no controle das coisas)?
+            </span>
+            <div class="sem-click" onclick="pergunta10(this)" id="4">Nunca</div>
+            <div class="sem-click" onclick="pergunta10(this)" id="3">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta10(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta10(this)" id="1">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta10(this)" id="0">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta11 escondido">
+            <span>
+                11.	No mês passado, quantas vezes você se irritou por coisas que aconteceram que estavam fora de seu controle?
+            </span>
+            <div class="sem-click" onclick="pergunta11(this)" id="0">Nunca</div>
+            <div class="sem-click" onclick="pergunta11(this)" id="1">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta11(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta11(this)" id="3">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta11(this)" id="4">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta12 escondido">
+            <span>
+                12.	No mês passado, quantas vezes você deu por si pensando nas coisas que tinha que fazer?
+            </span>
+            <div class="sem-click" onclick="pergunta12(this)" id="0">Nunca</div>
+            <div class="sem-click" onclick="pergunta12(this)" id="1">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta12(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta12(this)" id="3">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta12(this)" id="4">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta13 escondido">
+            <span>
+                13.	No mês passado, quantas vezes você foi capaz de controlar a maneira como gastar seu tempo?
+            </span>
+            <div class="sem-click" onclick="pergunta13(this)" id="4">Nunca</div>
+            <div class="sem-click" onclick="pergunta13(this)" id="3">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta13(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta13(this)" id="1">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta13(this)" id="0">Muito frequentemente</div>
+        </div>
+
+        <div class="question pergunta14 escondido">
+            <span>
+                14.	No mês passado, quantas vezes você sentiu que as dificuldades estavam se acumulando tanto que você não poderia superá-las?
+            </span>
+            <div class="sem-click" onclick="pergunta14(this)" id="0">Nunca</div>
+            <div class="sem-click" onclick="pergunta14(this)" id="1">Quase nunca</div>
+            <div class="sem-click" onclick="pergunta14(this)" id="2">Às vezes </div>
+            <div class="sem-click" onclick="pergunta14(this)" id="3">Quase sempre</div>
+            <div class="sem-click" onclick="pergunta14(this)" id="4">Muito frequentemente</div>
+        </div>
+        <button class="enviar escondido">ENVIAR</button>
+
+    </form>
+   <div class="resultado escondido"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
