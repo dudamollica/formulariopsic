@@ -269,7 +269,7 @@ function paginaResultado() {
     }
     else {
         resultado.innerHTML = `<h1> Sua pontuação foi ${pontosTotais}</h1>
-    <p>Fique tranquilo seu nível de estresse não está em um nível de risco. Continue com seus bons habitos!!!</p>`
+    <p>Fique tranquilo, seu nível de estresse não está em um nível de risco. Continue com seus bons habitos!!!</p>`
     }
 }
 
